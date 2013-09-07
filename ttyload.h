@@ -7,6 +7,7 @@
  * All rights reserved.
  *
  */
+#include <time.h>
 
 #define	MIN(a,b)	(((a)<(b))?(a):(b))
 #define	MAX(a,b)	(((a)>(b))?(a):(b))
@@ -15,7 +16,7 @@
 #define	FIVE	02;
 #define	FIFTEEN	04;
 
-typedef	long	load_t;
+typedef	long load_t;
 
 typedef struct load_list {
 	load_t	one_minute;
@@ -30,8 +31,8 @@ typedef struct load_list {
 /* storage for clock display along the bottom */
 typedef struct clock_info {
 	int	pos;
-	char	clock[6];
-        time_t  when;
+	char clock[6];
+    time_t when;
     } clock_info;
 
 /* functions in arch-specific files: */
